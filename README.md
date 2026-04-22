@@ -1,0 +1,2 @@
+# Design-and-Development-of-the-College-Event-Webpages
+A dynamic University Events Web Application built using HTML, CSS, and JavaScript. It showcases events like hackathons, symposiums, and health camps with detailed pages, registration forms, OTP verification, participant tracking, and admin tools for managing, analyzing, and exporting event results efficiently. Includes responsive design and goodUX.
