@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="hero-section">
+  <img src="img6.webp" alt="Vignan University Campus">
+  <div class="hero-text">
+    Welcome to Vignan University!
+  </div>
+</div>
+
+</header>
+
+<main class="container">
+
+  <div class="event-card">
+    <img src="img.jpeg" class="event-img">
+    <h2>Inter-College Coding Hackathon</h2>
+    <p>Date: Feb 01 – Feb 03, 2026</p>
+    <p>Venue: Auditorium Block A</p>
+    <a class="btn" href="event-01.html">View Details</a>
+  </div>
+
+  <div class="event-card">
+    <img src="img1.jpeg" class="event-img">
+    <h2>Research & Innovation Symposium</h2>
+    <p>Date: May 18 2026</p>
+    <p>Venue: Conference Hall 3</p>
+    <a class="btn" href="event-02.html">View Details</a>
+  </div>
+
+  <div class="event-card">
+    <img src="img2.jpeg" class="event-img">
+    <h2>Community Health Camp</h2>
+    <p>Date: March 15, 2026</p>
+    <p>Venue: Community Center</p>
+    <a class="btn" href="event-03.html">View Details</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Vignan University</p>
+</footer>
+
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coding Hackathon</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Event card wrapper */
+.event-card {
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.detail-img {
+  width: 700px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Section cards */
+.section-card {
+  display: flex;
+  align-items: flex-start;
+  background: #e7f3ff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.section-card:nth-child(odd) {
+  background: #fff3e6;
+}
+
+.section-card i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+  min-width: 30px;
+  text-align: center;
+}
+
+.section-card p, .section-card ul {
+  margin: 0;
+}
+
+/* Registration form */
+#registerForm {
+  width: 350px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#registerForm label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#registerForm input, #registerForm select, #registerForm button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#registerForm button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+#registerForm button:hover {
+  background: #0056b3;
+}
+
+#otpSection {
+  margin-top: 10px;
+}
+
+/* Table and admin panel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.admin {
+  background: #ffeeba;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+/* Headings */
+h2 {
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* List styling */
+ul {
+  margin-left: 20px;
+}
+</style>
+
+<!-- Icons from Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="event-card">
+<img src="img.jpeg" class="detail-img">
+
+<!-- Section Cards -->
+<div class="section-card">
+<i class="fa-solid fa-info-circle"></i>
+<div>
+  <h3>Event Details</h3>
+  <p>The 24-hour Coding Hackathon challenges students to develop innovative software solutions, test problem-solving skills, and collaborate in teams.</p>
+</div>
+</div>
+
+<div class="section-card">
+<i class="fa-solid fa-clipboard-list"></i>
+<div>
+  <h3>How to Register</h3>
+  <ul>
+    <li>Fill the registration form below with all required details.</li>
+    <li>Click “Send OTP” and verify your registration.</li>
+    <li>Once verified, you will appear in the participants’ list.</li>
+  </ul>
+</div>
+</div>
+
+<div class="section-card">
+<i class="fa-solid fa-map-marker-alt"></i>
+<div>
+  <h3>Venue Details</h3>
+  <p>University Tech Hub, Main Auditorium, Block A, City Campus. Registration desk opens at 9:00 AM on event day.</p>
+</div>
+</div>
+
+<div class="section-card">
+<i class="fa-solid fa-check-circle"></i>
+<div>
+  <h3>How Event Validates</h3>
+  <ul>
+    <li>Participants attempt coding challenges within 24 hours.</li>
+    <li>Scores are calculated based on correct and attempted questions.</li>
+    <li>Top 3 scorers are selected as winners and notified via email & mobile.</li>
+  </ul>
+</div>
+</div>
+
+<!-- Registration Form -->
+<h2>Registration Form</h2>
+<form id="registerForm">
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Department</label>
+<input type="text" id="dept" required>
+
+<label>Email (Gmail)</label>
+<input type="email" id="email" required>
+
+<label>Mobile Number</label>
+<input type="tel" id="mobile" pattern="[0-9]{10}" required>
+
+<label>Participation Mode</label>
+<select id="mode" required>
+  <option value="">Select</option>
+  <option>Individual</option>
+  <option>Team Leader</option>
+  <option>Team Member</option>
+</select>
+
+<label>Questions Attempted</label>
+<input type="number" id="attempted" min="0" required>
+
+<label>Correct Answers</label>
+<input type="number" id="correct" min="0" required>
+
+<button type="button" onclick="sendOTP()">Send OTP</button>
+</form>
+
+<p id="otpMsg" style="text-align:center;"></p>
+
+<div id="otpSection" style="display:none; width:350px; margin:0 auto;">
+<label>Enter OTP</label>
+<input type="number" id="otpInput">
+<button onclick="verifyOTP()">Verify OTP</button>
+</div>
+
+<p id="notifyMsg" style="font-weight:bold; text-align:center;"></p>
+
+<h2>Participants</h2>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>Dept</th>
+  <th>Email</th>
+  <th>Mobile</th>
+  <th>Mode</th>
+  <th>Attempted</th>
+  <th>Correct</th>
+  <th>Score</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody id="studentTable"></tbody>
+</table>
+
+<button onclick="downloadCSV()">Download Results</button>
+
+<div class="admin">
+<h2>Admin Panel</h2>
+<label>Admin Password</label>
+<input type="password" id="adminPass" placeholder="admin123">
+<button onclick="selectWinners()">Select Winners</button>
+</div>
+
+</div>
+
+<script>
+let generatedOTP;
+let participants = [];
+
+function sendOTP() {
+  generatedOTP = Math.floor(1000 + Math.random() * 9000);
+  document.getElementById("otpMsg").innerText =
+    "OTP sent to Email & Mobile (Demo OTP: " + generatedOTP + ")";
+  document.getElementById("otpSection").style.display = "block";
+}
+
+function verifyOTP() {
+  if (document.getElementById("otpInput").value == generatedOTP) {
+    registerStudent();
+    document.getElementById("notifyMsg").innerText =
+      "Registration successful & verified!";
+  } else {
+    alert("Invalid OTP!");
+  }
+}
+
+function registerStudent() {
+  const name = nameVal("name");
+  const dept = nameVal("dept");
+  const email = nameVal("email");
+  const mobile = nameVal("mobile");
+  const mode = nameVal("mode");
+  const attempted = parseInt(nameVal("attempted"));
+  const correct = parseInt(nameVal("correct"));
+
+  if (correct > attempted) {
+    alert("Correct answers cannot exceed attempted!");
+    return;
+  }
+
+  const score = (correct * 2) + (attempted - correct);
+
+  participants.push({
+    name, dept, email, mobile, mode,
+    attempted, correct, score, status: "Verified"
+  });
+
+  const row = studentTable.insertRow();
+  row.innerHTML = `
+    <td>${name}</td>
+    <td>${dept}</td>
+    <td>${email}</td>
+    <td>${mobile}</td>
+    <td>${mode}</td>
+    <td>${attempted}</td>
+    <td>${correct}</td>
+    <td>${score}</td>
+    <td>Verified</td>
+  `;
+
+  registerForm.reset();
+  otpSection.style.display = "none";
+}
+
+function selectWinners() {
+  if (adminPass.value !== "admin123") {
+    alert("Unauthorized Admin!");
+    return;
+  }
+
+  participants.sort((a, b) => b.score - a.score);
+
+  for (let i = 0; i < participants.length; i++) {
+    let status = i < 3 ? "🏆 Winner" : "Not Selected";
+    participants[i].status = status;
+    studentTable.rows[i].cells[8].innerText = status;
+
+    if (i < 3) {
+      alert("Winner: " + participants[i].name +
+        "\nScore: " + participants[i].score +
+        "\nNotification sent!");
+    }
+  }
+}
+
+function downloadCSV() {
+  let csv = "Name,Dept,Email,Mobile,Mode,Attempted,Correct,Score,Status\n";
+  participants.forEach(p => {
+    csv += `${p.name},${p.dept},${p.email},${p.mobile},${p.mode},${p.attempted},${p.correct},${p.score},${p.status}\n`;
+  });
+
+  const blob = new Blob([csv], { type: "text/csv" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "hackathon_results.csv";
+  link.click();
+}
+
+function nameVal(id) {
+  return document.getElementById(id).value;
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research & Innovation Symposium</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f5;
+      margin: 0;
+    }
+
+    .site-header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .event-card {
+      background: white;
+      padding: 25px;
+      margin: 25px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    img {
+      height:300px;
+      width: 700px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Section headers */
+    h2 {
+      color: #2c3e50;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    h2 i {
+      background: #2c3e50;
+      color: white;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 14px;
+    }
+
+    /* Info Cards */
+    .info-card {
+      padding: 18px;
+      border-radius: 10px;
+      margin: 18px 0;
+      border-left: 6px solid;
+      transition: transform 0.2s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .blue { background: #e3f2fd; border-color: #2196f3; }
+    .green { background: #e8f5e9; border-color: #4caf50; }
+    .orange { background: #fff3e0; border-color: #ff9800; }
+    .purple { background: #f3e5f5; border-color: #9c27b0; }
+    .yellow { background: #fffde7; border-color: #fbc02d; }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 9px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button, .btn {
+      margin-top: 15px;
+      padding: 10px 18px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 6px;
+    }
+
+    button:hover, .btn:hover {
+      background-color: #34495e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 30px;
+    }
+  </style>
+
+  <script>
+    function registerStudent() {
+      const name = document.getElementById("name").value;
+      const dept = document.getElementById("dept").value;
+      const type = document.getElementById("type").value;
+
+      if (name === "" || dept === "" || type === "") {
+        alert("Please fill all fields");
+        return;
+      }
+
+      const table = document.getElementById("studentTable");
+      const row = table.insertRow();
+
+      row.insertCell(0).innerText = name;
+      row.insertCell(1).innerText = dept;
+      row.insertCell(2).innerText = type;
+
+      alert("Registration Successful!");
+      document.getElementById("registerForm").reset();
+    }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>🔬 Research & Innovation Symposium</h1>
+  <p>Showcasing Ideas, Research & Technological Innovations</p>
+</header>
+
+<main class="container">
+
+  <div class="event-card">
+    <img src="img1.jpeg">
+
+    <div class="info-card blue">
+      <h2><i class="fas fa-book"></i> Event Overview</h2>
+      <p>
+        A platform for students, researchers, and faculty to present
+        innovative ideas, research papers, and prototypes while encouraging
+        interdisciplinary collaboration.
+      </p>
+    </div>
+
+    <div class="info-card green">
+      <h2><i class="fas fa-calendar-alt"></i> Event Details</h2>
+      <p><strong>Date:</strong> May 18, 2026</p>
+      <p><strong>Time:</strong> 9:30 AM – 4:30 PM</p>
+      <p><strong>Venue:</strong> Conference Hall</p>
+      <p><strong>Eligibility:</strong> UG, PG & Research Scholars</p>
+    </div>
+
+    <div class="info-card orange">
+      <h2><i class="fas fa-clipboard-list"></i> How to Register</h2>
+      <ul>
+        <li>Enter participant details</li>
+        <li>Select participation type</li>
+        <li>Click Register</li>
+        <li>View details instantly</li>
+      </ul>
+    </div>
+
+    <div class="info-card purple">
+      <h2><i class="fas fa-gavel"></i> Selection Process</h2>
+      <ul>
+        <li>Expert evaluation</li>
+        <li>Originality & innovation</li>
+        <li>Presentation & Q&A</li>
+        <li>Final awards ceremony</li>
+      </ul>
+    </div>
+
+    <div class="info-card yellow">
+      <h2><i class="fas fa-flask"></i> Tracks</h2>
+      <ul>
+        <li>Paper Presentations</li>
+        <li>Project & Prototype Expo</li>
+        <li>Startup Showcase</li>
+        <li>Poster Presentations</li>
+      </ul>
+    </div>
+
+    <div class="info-card green">
+      <h2><i class="fas fa-trophy"></i> Prizes & Awards</h2>
+      <ul>
+        <li>🥇 Best Research Paper</li>
+        <li>🥈 Best Innovative Project</li>
+        <li>🥉 Best Poster</li>
+        <li>🎖 Jury Award</li>
+        <li>📜 Participation Certificates</li>
+      </ul>
+    </div>
+
+    <h2><i class="fas fa-pen"></i> Event Registration</h2>
+    <form id="registerForm">
+      <label>Participant Name</label>
+      <input type="text" id="name" required>
+
+      <label>Department / Institution</label>
+      <input type="text" id="dept" required>
+
+      <label>Participation Type</label>
+      <select id="type" required>
+        <option value="">Select Type</option>
+        <option>Paper Presentation</option>
+        <option>Project Expo</option>
+        <option>Poster Presentation</option>
+        <option>Attendee</option>
+      </select>
+
+      <button type="button" onclick="registerStudent()">Register</button>
+    </form>
+
+    <h2><i class="fas fa-users"></i> Registered Participants</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Department / Institution</th>
+        <th>Participation Type</th>
+      </tr>
+      <tbody id="studentTable"></tbody>
+    </table>
+
+    <a class="btn" href="index.html">← Back to Events</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© Vignan University</p>
+</footer>
+
+</body>
+</html>
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Health Camp</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f5;
+      margin: 0;
+    }
+
+    .site-header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    /* General section cards */
+    .event-card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 700px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Colored info cards */
+    .info-card {
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .blue { background: #e3f2fd; }
+    .green { background: #e8f5e9; }
+    .orange { background: #fff3e0; }
+    .purple { background: #f3e5f5; }
+
+    /* Registration card */
+    #registerCard {
+      width: 420px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      border-top: 5px solid #2c3e50;
+    }
+
+    #registerCard label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #registerCard input, 
+    #registerCard select, 
+    #registerCard button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    #registerCard button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    #registerCard button:hover {
+      background-color: #34495e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: white;
+    }
+
+    th {
+      background: #2c3e50;
+      color: white;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #34495e;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+
+  <script>
+    let participants = [];
+
+    function registerParticipant() {
+      const name = nameVal("name");
+      const age = parseInt(nameVal("age"));
+      const mobile = nameVal("mobile");
+
+      const tests = Array.from(document.getElementById("tests").selectedOptions).map(o => o.value);
+      const results = Array.from(document.getElementById("results").selectedOptions).map(o => o.value);
+
+      if (!name || isNaN(age) || !mobile || tests.length === 0 || results.length === 0) {
+        alert("Please fill all fields and select tests with results.");
+        return;
+      }
+
+      if (tests.length !== results.length) {
+        alert("Select equal number of test results.");
+        return;
+      }
+
+      for (let i = 0; i < tests.length; i++) {
+        participants.push({ name, age, mobile, test: tests[i], result: results[i] });
+
+        const row = participantTable.insertRow();
+        row.innerHTML = `
+          <td>${name}</td>
+          <td>${age}</td>
+          <td>${mobile}</td>
+          <td>${tests[i]}</td>
+          <td>${results[i]}</td>
+        `;
+      }
+
+      registerForm.reset();
+      alert("Participant registered successfully!");
+    }
+
+    function downloadCSV() {
+      let csv = "Name,Age,Mobile,Test,Result\n";
+      participants.forEach(p => {
+        csv += `${p.name},${p.age},${p.mobile},${p.test},${p.result}\n`;
+      });
+
+      const blob = new Blob([csv], { type: "text/csv" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "health_camp_results.csv";
+      link.click();
+    }
+
+    function nameVal(id) {
+      return document.getElementById(id).value;
+    }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>🏥 Community Health Camp</h1>
+  <p>Free Health Screening for a Healthier Community</p>
+</header>
+
+<main class="container">
+
+  <div class="event-card">
+    <img src="img2.jpeg">
+
+    <div class="info-card blue">
+      <h2>📌 Event Overview</h2>
+      <p>
+        This Community Health Camp provides free medical screening to help
+        detect health issues early and promote preventive care.
+      </p>
+    </div>
+
+    <div class="info-card green">
+      <h2>📍 Event Place & Schedule</h2>
+      <p><strong>Venue:</strong> Community Center, Lakeside Town</p>
+      <p><strong>Date:</strong> March 15, 2026</p>
+      <p><strong>Time:</strong> 9:00 AM – 5:00 PM</p>
+    </div>
+
+    <div class="info-card orange">
+      <h2>🧪 Tests Involved</h2>
+      <ul>
+        <li>Blood Pressure</li>
+        <li>Blood Sugar</li>
+        <li>Cholesterol</li>
+        <li>Vision Check</li>
+        <li>BMI</li>
+      </ul>
+    </div>
+
+    <div class="info-card purple">
+      <h2>⚙️ Health Camp Process</h2>
+      <ol>
+        <li>Participant registration</li>
+        <li>Multiple health tests conducted</li>
+        <li>Results recorded (Positive / Negative)</li>
+        <li>Doctor consultation & advice</li>
+        <li>Health summary provided</li>
+      </ol>
+    </div>
+
+    <!-- Registration -->
+    <h2 style="text-align:center;">📝 Participant Registration</h2>
+    <div id="registerCard">
+      <form id="registerForm">
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Age</label>
+        <input type="number" id="age" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+
+        <label>Select Tests (Ctrl + Click)</label>
+        <select id="tests" multiple size="5">
+          <option>Blood Pressure</option>
+          <option>Blood Sugar</option>
+          <option>Cholesterol</option>
+          <option>Vision</option>
+          <option>BMI</option>
+        </select>
+
+        <label>Select Results (Same Order)</label>
+        <select id="results" multiple size="5">
+          <option>Positive</option>
+          <option>Negative</option>
+          <option>Positive</option>
+          <option>Negative</option>
+          <option>Positive</option>
+        </select>
+
+        <button type="button" onclick="registerParticipant()">Register</button>
+      </form>
+    </div>
+
+    <h2>📊 Registered Participants & Test Results</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Mobile</th>
+        <th>Test</th>
+        <th>Result</th>
+      </tr>
+      <tbody id="participantTable"></tbody>
+    </table>
+
+    <button class="btn" onclick="downloadCSV()">⬇ Download CSV</button>
+    <a class="btn" href="index.html">← Back to Events</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Lakeside Health Services</p>
+</footer>
+
+</body>
+</html>
+ 
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+   /* ================= HERO IMAGE ================= */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+/* Background image */
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text on image (cloud area) */
+.hero-text {
+  position: absolute;
+  top: 15%;               /* moves text to cloud area */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 25px;
+  background: rgba(0, 0, 0, 0.35); /* readable on clouds */
+  border-radius: 8px;
+  letter-spacing: 2px;
+}
+
+.site-header {
+  text-align: center;
+  
+  color: white;
+  padding: 25px;
+  position: relative;
+  transition: 
+    background 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+/* HOVER: background + size + movement */
+.site-header:hover {
+  background: linear-gradient(120deg, #8e44ad, #3498db);
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGO IMAGE */
+.site-header img {
+  width: 1400px;
+  height: 500px;
+  margin-bottom: 
+  transition: transform 0.6s ease;
+}
+
+/* LOGO MOVES & ROTATES */
+.site-header:hover img {
+  transform: translateY(-10px) rotate(10deg) scale(1.15);
+}
+
+/* HEADING */
+.site-header h1 {
+  margin: 10px 0 5px;
+  transition: 
+    letter-spacing 0.5s ease,
+    text-shadow 0.5s ease;
+}
+
+/* HEADING ANIMATION */
+.site-header:hover h1 {
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}
+
+/* SUBTEXT */
+.site-header p {
+  transition: transform 0.5s ease;
+}
+
+/* SUBTEXT SLIDES */
+.site-header:hover p {
+  transform: translateX(10px);
+}
+
+
+/* 🔹 Grid layout: 2 rows × 3 columns */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.event-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.event-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.event-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+/* EVENT CARD BASE */
+.event-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 
+    background-color 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* HOVER EFFECT: background + size + movement */
+.event-card:hover {
+  background-color: #eaf6ff;          /* background color change */
+  transform: scale(1.06) translateY(-10px); /* size + movement */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* IMAGE HOVER ANIMATION */
+.event-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.4s ease;
+}
+
+/* Image zoom on hover */
+.event-card:hover .event-img {
+  transform: scale(1.08);
+}
+
+/* TITLE ANIMATION */
+.event-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  transition: color 0.4s ease, letter-spacing 0.4s ease;
+}
+
+.event-card:hover h2 {
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+footer {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+}
